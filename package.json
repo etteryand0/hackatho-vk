@@ -1,6 +1,7 @@
 {
   "name": "decode",
   "version": "1.0.0",
+  "homepage":"https://etteryand0.github.io/hackathon-vk",
   "description": "",
   "main": "index.js",
   "scripts": {
