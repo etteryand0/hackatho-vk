@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/static/js/main.b59f5103.chunk.js",
-    "main.js.map": "/static/js/main.b59f5103.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ca63edf2.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ca63edf2.js.map",
-    "static/js/2.823acaf0.chunk.js": "/static/js/2.823acaf0.chunk.js",
-    "static/js/2.823acaf0.chunk.js.map": "/static/js/2.823acaf0.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.3e51d4f22abb0982b9e89ee35be53981.js": "/precache-manifest.3e51d4f22abb0982b9e89ee35be53981.js",
-    "service-worker.js": "/service-worker.js",
-    "static/js/2.823acaf0.chunk.js.LICENSE.txt": "/static/js/2.823acaf0.chunk.js.LICENSE.txt"
+    "main.js": "/hackathon-vk/static/js/main.b59f5103.chunk.js",
+    "main.js.map": "/hackathon-vk/static/js/main.b59f5103.chunk.js.map",
+    "runtime-main.js": "/hackathon-vk/static/js/runtime-main.a8cb0900.js",
+    "runtime-main.js.map": "/hackathon-vk/static/js/runtime-main.a8cb0900.js.map",
+    "static/js/2.823acaf0.chunk.js": "/hackathon-vk/static/js/2.823acaf0.chunk.js",
+    "static/js/2.823acaf0.chunk.js.map": "/hackathon-vk/static/js/2.823acaf0.chunk.js.map",
+    "index.html": "/hackathon-vk/index.html",
+    "precache-manifest.95429719c27ec2868486d70e1c4e59e4.js": "/hackathon-vk/precache-manifest.95429719c27ec2868486d70e1c4e59e4.js",
+    "service-worker.js": "/hackathon-vk/service-worker.js",
+    "static/js/2.823acaf0.chunk.js.LICENSE.txt": "/hackathon-vk/static/js/2.823acaf0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ca63edf2.js",
+    "static/js/runtime-main.a8cb0900.js",
     "static/js/2.823acaf0.chunk.js",
     "static/js/main.b59f5103.chunk.js"
   ]
