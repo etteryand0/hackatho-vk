@@ -1,10 +1,15 @@
 import React from 'react';
+import GenerateMessage from './GenerateMessage';
 
 class Dialogue extends React.Component {
     render() {
+        console.log(this.props.dialogue)
         return(
             <div>
-                dialogue
+                <GenerateMessage 
+                    dialogue={this.props.dialogue} 
+                    onClick={() => this.props.onClick()}
+                />
             </div>
         );
     }
