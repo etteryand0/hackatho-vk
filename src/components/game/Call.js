@@ -2,7 +2,6 @@ import React from 'react';
 import Scammer from './Scammer';
 // import Dialogue from './Dialogue';
 import GenerateMessage from './GenerateMessage';
-import GameOver from './GameOver';
 
 class Call extends React.Component {
     constructor(props) {
@@ -98,29 +97,47 @@ class Call extends React.Component {
                   }
                 }
             },
-            messages: Array(1)
+            messages: ["алло?"],
+            game_over: false,
+            score: 0
         };
     }
 
-    choice() {
-        console.log(this.state.dialogue.reaction.yes.dialogue.game_over);
-
+    choice(data) {
         let messages = this.state.messages;
+        let dialogue;
         messages.push(this.state.dialogue.fishnet)
-        messages.push(this.state.dialogue.reaction.yes.dialogue.answer);
-        console.log(messages)
+        if (data[0]) {
+            messages.push(this.state.dialogue.reaction.yes.dialogue.answer);
 
-        this.setState({ dialogue : this.state.dialogue.reaction.yes.dialogue,
-                        messages : messages });
-        if (this.state.dialogue.reaction.yes.dialogue.game_over) {
-            return(
-                <GameOver />
-            );
+            dialogue = this.state.dialogue.reaction.yes.dialogue;
+
+            if (dialogue.game_over) {
+                console.log('game over a')
+                this.setState({game_over:true})
+            }
+
+        } else {
+            messages.push(this.state.dialogue.reaction.no.dialogue.answer);
+            
+            dialogue = this.state.dialogue.reaction.no.dialogue
+
+            if (dialogue.game_over) {
+                this.setState({game_over:true})
+            }
         }
+        
+        let score = this.state.score + data[1]
+
+        this.setState({ 
+            dialogue : dialogue,
+            messages : messages,
+            score : score
+        });
+         
     }
 
     render() {
-        console.log(this.props.dialogue)
         return(
             <div className="game-area">
                 <em>{this.state.id}</em>
@@ -129,15 +146,13 @@ class Call extends React.Component {
                     scammer={ this.state.scammer }
                       
                 />
-                {/* <Dialogue 
-                    dialogue={ this.state.dialogue } 
-                    onClick={() => this.choice()}
-                /> */}
                 <div>
                     <GenerateMessage 
                         dialogue={this.state.dialogue} 
-                        onClick={(bool) => this.choice()}
+                        onClick={(data) => this.choice(data)}
                         messages={this.state.messages}
+                        game_over={this.state.game_over}
+                        score={this.state.score}
                     />
                 </div>
             </div>
