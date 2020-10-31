@@ -1,0 +1,22 @@
+import React from 'react';
+import {Link} from "react-router-dom";
+
+class MainMenu extends React.Component {
+    render() {
+        return (
+            <main>
+                <img alt="logo" />
+                <h2 id="game-title">АнтиМошенник</h2>
+                <p>
+                    {/* Описание игры */}
+                    Lorem ipsum dolor ipsum dolor ipsum dolor ipsum dolor ipsum dolor ipsum dolor ipsum dolor
+                </p>
+                <Link to="/game">
+                    <button>Начать</button>
+                </Link>
+            </main>
+        );
+    }
+}
+
+export default MainMenu;
