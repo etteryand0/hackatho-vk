@@ -11,7 +11,10 @@ class MainMenu extends React.Component {
                     {/* Описание игры */}
                     Lorem ipsum dolor ipsum dolor ipsum dolor ipsum dolor ipsum dolor ipsum dolor ipsum dolor
                 </p>
-                <Link to="/game">
+                <Link to={{
+                    pathname:"/game",
+                    search:"?level=0"
+                }}>
                     <button>Начать</button>
                 </Link>
             </main>

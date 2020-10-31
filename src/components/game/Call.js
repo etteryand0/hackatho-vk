@@ -153,6 +153,7 @@ class Call extends React.Component {
                         messages={this.state.messages}
                         game_over={this.state.game_over}
                         score={this.state.score}
+                        id={this.state.id}
                     />
                 </div>
             </div>

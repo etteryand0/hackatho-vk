@@ -1,4 +1,10 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 class GenerateMessage extends React.Component {  
     recent_message() {
@@ -7,6 +13,13 @@ class GenerateMessage extends React.Component {
           <div className="message-gameover">
             <h2>{this.props.score}</h2>
             {this.props.dialogue.fishnet}
+            <br />
+            <Router>
+              <Link to={{
+                pathname:"/game",
+                search:`?level=${this.props.id + 1}`
+              }}>Новый уровень</Link>
+            </Router>
           </div>
         );
       } else {
