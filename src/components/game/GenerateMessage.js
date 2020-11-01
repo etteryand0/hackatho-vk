@@ -47,8 +47,7 @@ class GenerateMessage extends React.Component {
         return(
           <div className={this.props.message_scammer}>
             <Photo className={this.props.styles.profile_pic} />
-            <span className={this.props.styles.message}
-                  style={{position:'absolute'}}>
+            <span className={this.props.styles.message}>
               {this.props.dialogue.fishnet}
             </span>
             

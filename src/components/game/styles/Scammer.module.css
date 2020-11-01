@@ -59,13 +59,11 @@
   border-radius: 2px;
 }
 
-.message_scammer {
-  display: grid;
-
-  grid-template-areas: "svg message";
-  grid-template-columns: 2fr 10fr;
-  grid-template-rows: 12fr;
+.message_scammer .message {
+  position: absolute;
 }
+
+
 
 .message_player {
   display: grid;
