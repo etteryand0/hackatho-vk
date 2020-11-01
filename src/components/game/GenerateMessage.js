@@ -29,16 +29,17 @@ class GenerateMessage extends React.Component {
                   style={{position:'absolute'}}>
               {this.props.dialogue.fishnet}
             </span>
-            <br />
-
+            
+            <div className={this.props.styles.choice_button_wrapper}>
             <button onClick={() => this.props.onClick([true,
                                                        this.props.dialogue.reaction.yes.dialogue.score])}
-              className={this.props.styles.button}
-            >{this.props.dialogue.reaction.yes.dialogue.answer}</button>
+                                                       className={this.props.styles.choice_button}
+                                                       >{this.props.dialogue.reaction.yes.dialogue.answer}</button>
             <button onClick={() => this.props.onClick([false,
                                                        this.props.dialogue.reaction.no.dialogue.score])}
-              className={this.props.styles.button}
-            >{this.props.dialogue.reaction.no.dialogue.answer}</button>
+                                                       className={this.props.styles.choice_button}
+                                                       >{this.props.dialogue.reaction.no.dialogue.answer}</button>
+            </div>
           </div>
         );
       }
