@@ -117,6 +117,7 @@ class Call extends React.Component {
     }
 
     choice(data) {
+        document.getElementById('root').style.background = '#fff';
         let messages = this.state.messages;
         let dialogue;
         messages.push(this.state.dialogue.fishnet)
@@ -182,7 +183,6 @@ class Call extends React.Component {
                         Уровень {this.state.id+1}
                     </p>
                 </header>
-                <hr />
                 {this.scammer()}
             </main>
         );

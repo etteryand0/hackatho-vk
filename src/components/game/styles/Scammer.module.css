@@ -35,3 +35,65 @@
 .button {
   background: none;
 }
+
+.profile_pic {
+  height: 50px;
+  width: 70px;
+  font-size:1cm;
+  text-anchor: middle;
+  grid-area: svg;
+}
+.message {
+  
+  grid-area: message;
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 8px;
+  margin-bottom: 30px;
+
+  color: #000;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+}
+
+.message_scammer {
+  display: grid;
+
+  grid-template-areas: "svg message";
+  grid-template-columns: 2fr 10fr;
+  grid-template-rows: 12fr;
+}
+
+.message_player {
+  display: grid;
+
+  grid-template-areas: "a message";
+  grid-template-columns: 4fr 8fr;
+  grid-template-rows: 12fr;
+}
+.message_player p {
+  text-align: right;
+}
+
+.message_player svg {
+  display: none;
+}
+
+.center h2, .center small {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #4DA1F5;
+}
+.center small {
+  font-size: 12px;
+}
+.center {
+  text-align: center;
+  padding-bottom: 22px;
+  padding-top: 10px;
+}

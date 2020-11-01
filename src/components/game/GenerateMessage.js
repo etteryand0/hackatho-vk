@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Link
 } from "react-router-dom";
+import { ReactComponent as Photo } from './../scammer.svg';
 
 class GenerateMessage extends React.Component {  
     recent_message() {
@@ -22,8 +23,12 @@ class GenerateMessage extends React.Component {
         );
       } else {
         return(
-          <div className="message-scammer">
-            {this.props.dialogue.fishnet}
+          <div className={this.props.message_scammer}>
+            <Photo className={this.props.styles.profile_pic} />
+            <span className={this.props.styles.message}
+                  style={{position:'absolute'}}>
+              {this.props.dialogue.fishnet}
+            </span>
             <br />
 
             <button onClick={() => this.props.onClick([true,
@@ -40,24 +45,28 @@ class GenerateMessage extends React.Component {
     }  
 
     render() {
-        let i = 1
-        let styles = 'message-scammer'
+        if (this.props.messages[0] === undefined) {
+          let messages = this.props.messages;
+          messages.shift()
+        }
+        let i = 0;
+        let styles;
         return(
         <div>
           {this.props.messages.map(message => {
-            if (i % 2 === 1) {
-              styles = 'message-player';
-            } else {
-              styles = 'message-scammer';
-            }
-            if (this.props.game_over) {
-              styles = 'message-gameover';
-            }
             i += 1
+            if (this.props.game_over) {
+              styles = 'message-gameover'
+            }
+            if (i % 2 === 1) {
+              styles = this.props.styles.message_player;
+            } else {
+              styles = this.props.styles.message_scammer;
+            }
             return (
               <div className={styles} key={i}>
-                 {message}
-                 <br /> <br />
+                  <Photo className={this.props.styles.profile_pic} />
+                  <span className={this.props.styles.message}>{message}</span>
                </div>
              );
             })}

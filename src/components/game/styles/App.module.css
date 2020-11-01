@@ -1,6 +1,6 @@
 .static {
   background: #FFFFFF;
-  border: 1px solid #7C7C7C;
+  border: 1px solid #DADADA;
   height: 20px;
   width: 100%;
   left: -1px;
@@ -29,6 +29,6 @@
 .button {
   width: 70%;
   height: 35px;
-  
+
   color: #4DA1F5;
 }
