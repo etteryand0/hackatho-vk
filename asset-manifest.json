@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.js": "/hackathon-vk/static/js/main.b59f5103.chunk.js",
-    "main.js.map": "/hackathon-vk/static/js/main.b59f5103.chunk.js.map",
+    "main.css": "/hackathon-vk/static/css/main.837b23ec.chunk.css",
+    "main.js": "/hackathon-vk/static/js/main.a34f792a.chunk.js",
+    "main.js.map": "/hackathon-vk/static/js/main.a34f792a.chunk.js.map",
     "runtime-main.js": "/hackathon-vk/static/js/runtime-main.a8cb0900.js",
     "runtime-main.js.map": "/hackathon-vk/static/js/runtime-main.a8cb0900.js.map",
-    "static/js/2.823acaf0.chunk.js": "/hackathon-vk/static/js/2.823acaf0.chunk.js",
-    "static/js/2.823acaf0.chunk.js.map": "/hackathon-vk/static/js/2.823acaf0.chunk.js.map",
+    "static/js/2.83a27d9c.chunk.js": "/hackathon-vk/static/js/2.83a27d9c.chunk.js",
+    "static/js/2.83a27d9c.chunk.js.map": "/hackathon-vk/static/js/2.83a27d9c.chunk.js.map",
     "index.html": "/hackathon-vk/index.html",
-    "precache-manifest.95429719c27ec2868486d70e1c4e59e4.js": "/hackathon-vk/precache-manifest.95429719c27ec2868486d70e1c4e59e4.js",
+    "precache-manifest.8701f946fc1b15c9532c70d3d557e99b.js": "/hackathon-vk/precache-manifest.8701f946fc1b15c9532c70d3d557e99b.js",
     "service-worker.js": "/hackathon-vk/service-worker.js",
-    "static/js/2.823acaf0.chunk.js.LICENSE.txt": "/hackathon-vk/static/js/2.823acaf0.chunk.js.LICENSE.txt"
+    "static/css/main.837b23ec.chunk.css.map": "/hackathon-vk/static/css/main.837b23ec.chunk.css.map",
+    "static/js/2.83a27d9c.chunk.js.LICENSE.txt": "/hackathon-vk/static/js/2.83a27d9c.chunk.js.LICENSE.txt",
+    "static/media/logo.b62790a3.svg": "/hackathon-vk/static/media/logo.b62790a3.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a8cb0900.js",
-    "static/js/2.823acaf0.chunk.js",
-    "static/js/main.b59f5103.chunk.js"
+    "static/js/2.83a27d9c.chunk.js",
+    "static/css/main.837b23ec.chunk.css",
+    "static/js/main.a34f792a.chunk.js"
   ]
 }
