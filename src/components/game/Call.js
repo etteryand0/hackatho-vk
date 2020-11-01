@@ -161,6 +161,7 @@ class Call extends React.Component {
                     onClick={(data) => this.choice(data)}
                     messages={this.state.messages}
                     game_over={this.state.game_over}
+                    score={this.state.score}
                 />
             );
         } else {

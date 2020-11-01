@@ -6,11 +6,33 @@ import {
 import { ReactComponent as Photo } from './../scammer.svg';
 
 class GenerateMessage extends React.Component {  
+    plural(score) {
+      let num;
+      if (score > 0) {
+        num = '+' + score + ' баллов'; 
+      } else {
+        num = '-' + score + ' баллов';
+      }
+      return num;
+    }
     recent_message() {
+      let score;
+      if (this.props.score === 0) {
+        score = '0 баллов'
+      } else { 
+        if (Math.abs(this.props.score) > 4) {
+          // plural
+          score = this.plural(this.props.score)
+        } else {
+          score = this.props.score + ' балла';
+        }
+      } 
+      console.log(score)
       if (this.props.game_over) {
+        console.log(this.props.score)
         return(
-          <div className="message-gameover">
-            <h2>{this.props.score}</h2>
+          <div className={this.props.styles.message_gameover}>
+            <h2>{score}</h2>
             {this.props.dialogue.fishnet}
             <br />
             <Router>

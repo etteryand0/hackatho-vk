@@ -43,6 +43,7 @@ class Scammer extends React.Component {
             );
         } else {
             if (this.props.game_over) {
+                console.log('score: ' + this.props.score)
                 return(
                     <div>
                         <GenerateMessage 
