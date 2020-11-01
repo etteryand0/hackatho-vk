@@ -56,22 +56,26 @@ class Scammer extends React.Component {
                             />
                     </div>
                 );
-            }
-            return(
-                <div>
-                    <h1>{this.props.scammer}</h1>
-                    <h3>Неизвестный номер</h3>
+            } else {
+
+                return(
+                    <div>
+                    <div className={styles.center}>
+                        <h2>Неизвестный номер</h2>
+                        <small>{this.props.scammer}</small>
+                    </div>
                     <GenerateMessage 
                         dialogue={this.props.dialogue} 
-                        onClick={(data) => this.choice(data)}
+                        onClick={(data) => this.props.onClick(data)}
                         messages={this.props.messages}
                         game_over={this.props.game_over}
                         score={this.props.score}
                         id={this.props.id}
                         styles={styles}
-                    />
-                </div>
-            );
+                        />
+                    </div>
+                );
+            }
         }
     }
 }
