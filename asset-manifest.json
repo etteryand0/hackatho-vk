@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/hackathon-vk/static/css/main.6b7ff12f.chunk.css",
-    "main.js": "/hackathon-vk/static/js/main.1a5f7c82.chunk.js",
-    "main.js.map": "/hackathon-vk/static/js/main.1a5f7c82.chunk.js.map",
+    "main.css": "/hackathon-vk/static/css/main.d2e38c63.chunk.css",
+    "main.js": "/hackathon-vk/static/js/main.05e47782.chunk.js",
+    "main.js.map": "/hackathon-vk/static/js/main.05e47782.chunk.js.map",
     "runtime-main.js": "/hackathon-vk/static/js/runtime-main.a8cb0900.js",
     "runtime-main.js.map": "/hackathon-vk/static/js/runtime-main.a8cb0900.js.map",
-    "static/js/2.d9a91b3d.chunk.js": "/hackathon-vk/static/js/2.d9a91b3d.chunk.js",
-    "static/js/2.d9a91b3d.chunk.js.map": "/hackathon-vk/static/js/2.d9a91b3d.chunk.js.map",
+    "static/js/2.ca2f7cde.chunk.js": "/hackathon-vk/static/js/2.ca2f7cde.chunk.js",
+    "static/js/2.ca2f7cde.chunk.js.map": "/hackathon-vk/static/js/2.ca2f7cde.chunk.js.map",
     "index.html": "/hackathon-vk/index.html",
-    "precache-manifest.88e36d2d7fec0d6330005b5b696d1d54.js": "/hackathon-vk/precache-manifest.88e36d2d7fec0d6330005b5b696d1d54.js",
+    "precache-manifest.2491f5a9313342f6a4411901fc8b9562.js": "/hackathon-vk/precache-manifest.2491f5a9313342f6a4411901fc8b9562.js",
     "service-worker.js": "/hackathon-vk/service-worker.js",
-    "static/css/main.6b7ff12f.chunk.css.map": "/hackathon-vk/static/css/main.6b7ff12f.chunk.css.map",
-    "static/js/2.d9a91b3d.chunk.js.LICENSE.txt": "/hackathon-vk/static/js/2.d9a91b3d.chunk.js.LICENSE.txt",
+    "static/css/main.d2e38c63.chunk.css.map": "/hackathon-vk/static/css/main.d2e38c63.chunk.css.map",
+    "static/js/2.ca2f7cde.chunk.js.LICENSE.txt": "/hackathon-vk/static/js/2.ca2f7cde.chunk.js.LICENSE.txt",
     "static/media/accept.83529909.svg": "/hackathon-vk/static/media/accept.83529909.svg",
     "static/media/decline.dc9b2f6c.svg": "/hackathon-vk/static/media/decline.dc9b2f6c.svg",
     "static/media/logo.b62790a3.svg": "/hackathon-vk/static/media/logo.b62790a3.svg",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a8cb0900.js",
-    "static/js/2.d9a91b3d.chunk.js",
-    "static/css/main.6b7ff12f.chunk.css",
-    "static/js/main.1a5f7c82.chunk.js"
+    "static/js/2.ca2f7cde.chunk.js",
+    "static/css/main.d2e38c63.chunk.css",
+    "static/js/main.05e47782.chunk.js"
   ]
 }
