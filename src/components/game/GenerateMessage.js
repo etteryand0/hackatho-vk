@@ -28,42 +28,43 @@ class GenerateMessage extends React.Component {
 
             <button onClick={() => this.props.onClick([true,
                                                        this.props.dialogue.reaction.yes.dialogue.score])}
-            >yes</button>
+              className={this.props.styles.button}
+            >{this.props.dialogue.reaction.yes.dialogue.answer}</button>
             <button onClick={() => this.props.onClick([false,
                                                        this.props.dialogue.reaction.no.dialogue.score])}
-            >no</button>
+              className={this.props.styles.button}
+            >{this.props.dialogue.reaction.no.dialogue.answer}</button>
           </div>
         );
       }
     }  
 
     render() {
-      let i = 1
-      let styles = 'message-scammer'
-
-      return(
+        let i = 1
+        let styles = 'message-scammer'
+        return(
         <div>
           {this.props.messages.map(message => {
-              if (i % 2 === 1) {
-                styles = 'message-player';
-              } else {
-                styles = 'message-scammer';
-              }
-              if (this.props.game_over) {
-                styles = 'message-gameover';
-              }
-              i += 1
-              return (
-               <div className={styles} key={i}>
+            if (i % 2 === 1) {
+              styles = 'message-player';
+            } else {
+              styles = 'message-scammer';
+            }
+            if (this.props.game_over) {
+              styles = 'message-gameover';
+            }
+            i += 1
+            return (
+              <div className={styles} key={i}>
                  {message}
                  <br /> <br />
                </div>
              );
-           })}
+            })}
           {this.recent_message()}
         </div>
       );
     }
-}
-
-export default GenerateMessage;
+  }
+  
+  export default GenerateMessage;

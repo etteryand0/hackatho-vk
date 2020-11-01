@@ -1,7 +1,7 @@
 import React from 'react';
 import Scammer from './Scammer';
 // import Dialogue from './Dialogue';
-import GenerateMessage from './GenerateMessage';
+import styles from './styles/Call.module.css';
 
 class Call extends React.Component {
     constructor(props) {
@@ -12,7 +12,10 @@ class Call extends React.Component {
             id: 0,
             scammer: '+79841045637',
             dialogue: {
-                answer:"алло?",
+                reaction:{
+                    yes:{
+                        dialogue:{
+                            answer:"алло?",
                 score:0,
                 fishnet: "Я сотрудник сб итд итп крч го кредмт",
                 game_over:false,
@@ -96,8 +99,18 @@ class Call extends React.Component {
                     }
                   }
                 }
+                        }
+                    },
+                    no:{
+                        dialogue:{
+                            score:0,
+                            fishnet:"Вы никогда не узнаете, что он хотел вам сказать",
+                            game_over:true
+                        }
+                    }
+                }
             },
-            messages: ["алло?"],
+            messages: [],
             game_over: false,
             score: 0
         };
@@ -137,25 +150,40 @@ class Call extends React.Component {
          
     }
 
+    scammer() {
+        if (this.state.messages.length > 0) {
+            return(
+                <Scammer 
+                    call={false}
+                    scammer={ this.state.scammer }
+                    dialogue={ this.state.dialogue }
+                    onClick={(data) => this.choice(data)}
+                    messages={this.state.messages}
+                    game_over={this.state.game_over}
+                />
+            );
+        } else {
+            return(
+                <Scammer 
+                    call={true}
+                    scammer={ this.state.scammer }
+                    dialogue={ this.state.dialogue }
+                    onClick={(data) => this.choice(data)}
+                />
+            );
+        }
+    }
+
     render() {
         return(
-            <main>
-                <em>{this.state.id}</em>
+            <main className={styles.main}>
+                <header className={styles.static}>
+                    <p>
+                        Уровень {this.state.id+1}
+                    </p>
+                </header>
                 <hr />
-                <Scammer 
-                    scammer={ this.state.scammer }
-                      
-                />
-                <div>
-                    <GenerateMessage 
-                        dialogue={this.state.dialogue} 
-                        onClick={(data) => this.choice(data)}
-                        messages={this.state.messages}
-                        game_over={this.state.game_over}
-                        score={this.state.score}
-                        id={this.state.id}
-                    />
-                </div>
+                {this.scammer()}
             </main>
         );
     }

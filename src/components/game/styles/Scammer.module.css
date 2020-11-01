@@ -1,0 +1,37 @@
+.wrapper {
+  display: grid;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  grid-template-areas: "accept decline";
+  grid-template-columns: "6fr 6fr";
+}
+
+.scammer {
+  width: 100%;
+  text-align: center;
+}
+
+.accept {
+  grid-area: accept;
+  width: 100%;
+  text-align: center;
+}
+
+.decline {
+  grid-area: decline;
+  width: 100%;
+  text-align: center;
+} 
+
+.scammer_info {
+  text-align: center;
+}
+.scammer_info p {
+  font-size: 20px;
+}
+
+.button {
+  background: none;
+}
