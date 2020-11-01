@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/hackathon-vk/static/css/main.837b23ec.chunk.css",
-    "main.js": "/hackathon-vk/static/js/main.49c24f54.chunk.js",
-    "main.js.map": "/hackathon-vk/static/js/main.49c24f54.chunk.js.map",
+    "main.css": "/hackathon-vk/static/css/main.6b7ff12f.chunk.css",
+    "main.js": "/hackathon-vk/static/js/main.1a5f7c82.chunk.js",
+    "main.js.map": "/hackathon-vk/static/js/main.1a5f7c82.chunk.js.map",
     "runtime-main.js": "/hackathon-vk/static/js/runtime-main.a8cb0900.js",
     "runtime-main.js.map": "/hackathon-vk/static/js/runtime-main.a8cb0900.js.map",
-    "static/js/2.83a27d9c.chunk.js": "/hackathon-vk/static/js/2.83a27d9c.chunk.js",
-    "static/js/2.83a27d9c.chunk.js.map": "/hackathon-vk/static/js/2.83a27d9c.chunk.js.map",
+    "static/js/2.d9a91b3d.chunk.js": "/hackathon-vk/static/js/2.d9a91b3d.chunk.js",
+    "static/js/2.d9a91b3d.chunk.js.map": "/hackathon-vk/static/js/2.d9a91b3d.chunk.js.map",
     "index.html": "/hackathon-vk/index.html",
-    "precache-manifest.be7038831b146b37e0ddbe7020b2443f.js": "/hackathon-vk/precache-manifest.be7038831b146b37e0ddbe7020b2443f.js",
+    "precache-manifest.88e36d2d7fec0d6330005b5b696d1d54.js": "/hackathon-vk/precache-manifest.88e36d2d7fec0d6330005b5b696d1d54.js",
     "service-worker.js": "/hackathon-vk/service-worker.js",
-    "static/css/main.837b23ec.chunk.css.map": "/hackathon-vk/static/css/main.837b23ec.chunk.css.map",
-    "static/js/2.83a27d9c.chunk.js.LICENSE.txt": "/hackathon-vk/static/js/2.83a27d9c.chunk.js.LICENSE.txt",
-    "static/media/logo.b62790a3.svg": "/hackathon-vk/static/media/logo.b62790a3.svg"
+    "static/css/main.6b7ff12f.chunk.css.map": "/hackathon-vk/static/css/main.6b7ff12f.chunk.css.map",
+    "static/js/2.d9a91b3d.chunk.js.LICENSE.txt": "/hackathon-vk/static/js/2.d9a91b3d.chunk.js.LICENSE.txt",
+    "static/media/accept.83529909.svg": "/hackathon-vk/static/media/accept.83529909.svg",
+    "static/media/decline.dc9b2f6c.svg": "/hackathon-vk/static/media/decline.dc9b2f6c.svg",
+    "static/media/logo.b62790a3.svg": "/hackathon-vk/static/media/logo.b62790a3.svg",
+    "static/media/scammer.38525430.svg": "/hackathon-vk/static/media/scammer.38525430.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a8cb0900.js",
-    "static/js/2.83a27d9c.chunk.js",
-    "static/css/main.837b23ec.chunk.css",
-    "static/js/main.49c24f54.chunk.js"
+    "static/js/2.d9a91b3d.chunk.js",
+    "static/css/main.6b7ff12f.chunk.css",
+    "static/js/main.1a5f7c82.chunk.js"
   ]
 }
