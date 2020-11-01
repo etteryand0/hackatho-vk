@@ -118,4 +118,5 @@
 
 .message_gameover, .message_gameover h2, .mesage_gameover a {
   color: #000;
+  text-align: center;
 }

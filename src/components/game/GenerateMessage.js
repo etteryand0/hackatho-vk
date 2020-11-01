@@ -37,9 +37,9 @@ class GenerateMessage extends React.Component {
             <br />
             <Router>
               <Link to={{
-                pathname:"/hackathon-vk/game",
-                search:`?level=${this.props.id + 1}`
-              }}>Новый уровень</Link>
+                pathname:"/hackathon-vk/",
+              //  search:`?level=${this.props.id + 1}`
+              }}>Новый уровень (Сначала)</Link>
             </Router>
           </div>
         );
@@ -47,7 +47,8 @@ class GenerateMessage extends React.Component {
         return(
           <div className={this.props.message_scammer}>
             <Photo className={this.props.styles.profile_pic} />
-            <span className={this.props.styles.message}>
+            <span className={this.props.styles.message}
+                  style={{position:'absolute'}}>
               {this.props.dialogue.fishnet}
             </span>
             
