@@ -17,14 +17,14 @@ class App extends React.Component {
                 <header className={styles.static}></header>
                 <Switch>
                     
-                <Route exact path="/game">
+                <Route exact path="/hackathon-vk/game">
                     <Call />
                 </Route>
-                <Route exact path="/">
+                <Route exact path="/hackathon-vk">
                     <MainMenu />
                 </Route>
                 <Route>
-                    <Redirect to="/" />
+                    <Redirect to="/hackathon-vk" />
                 </Route>
                 </Switch>
             </Router>
