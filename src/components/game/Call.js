@@ -139,7 +139,7 @@ class Call extends React.Component {
 
     render() {
         return(
-            <div className="game-area">
+            <main>
                 <em>{this.state.id}</em>
                 <hr />
                 <Scammer 
@@ -156,7 +156,7 @@ class Call extends React.Component {
                         id={this.state.id}
                     />
                 </div>
-            </div>
+            </main>
         );
     }
 }

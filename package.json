@@ -1,7 +1,7 @@
 {
   "name": "decode",
   "version": "1.0.0",
-  "homepage":"https://etteryand0.github.io/hackathon-vk",
+  "homepage": "https://etteryand0.github.io/hackathon-vk",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -30,6 +30,7 @@
     "eruda-code": "^2.0.0",
     "eruda-dom": "^2.0.0",
     "gh-pages": "^3.1.0",
+    "mongodb": "^3.6.2",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
