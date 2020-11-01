@@ -34,3 +34,8 @@ main {
 svg {
   padding-top: 30px;
 }
+button {
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: 0;
+}

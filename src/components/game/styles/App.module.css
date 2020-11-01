@@ -27,11 +27,8 @@
 }
 
 .button {
-  background: #FFFFFF;
-  border-radius: 4px;
-  border: 0;
   width: 70%;
   height: 35px;
-
+  
   color: #4DA1F5;
 }
