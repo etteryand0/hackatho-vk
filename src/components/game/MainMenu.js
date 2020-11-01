@@ -19,7 +19,7 @@ class MainMenu extends React.Component {
                     </div>
                     <div>
                         <Link to={{
-                            pathname:"/game",
+                            pathname:"/hackathon-vk/game",
                             search:"?level=0"
                         }}>
                             <button className={styles.button}>Начать</button>

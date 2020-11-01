@@ -14,7 +14,7 @@ class GenerateMessage extends React.Component {
             <br />
             <Router>
               <Link to={{
-                pathname:"/game",
+                pathname:"/hackathon-vk/game",
                 search:`?level=${this.props.id + 1}`
               }}>Новый уровень</Link>
             </Router>
