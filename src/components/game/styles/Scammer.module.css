@@ -117,3 +117,7 @@
   grid-template-columns: 8fr;
   grid-template-rows: 6fr 6fr;
 }
+
+.message_gameover, .message_gameover h2, .mesage_gameover a {
+  color: #000;
+}
